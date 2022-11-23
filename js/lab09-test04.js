@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		let brightness = Number(sliderBrightness.value);
 		console.log(brightness);
 		largeImage.style.filter="brightness("+brightness/300+")";
-		let num = document.getElementById("sliderBrightness");
+		let num = document.getElementById("numBrightness");
 		num.innerHTML = sliderBrightness.value;
 	});
 	
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		let hue = Number(sliderHue.value);
 		console.log(hue);
 		largeImage.style.filter="hue-rotate("+(hue/360)*100+"deg)";
-		let num = document.getElementById("sliderHue");
+		let num = document.getElementById("numHue");
 		num.innerHTML = sliderHue.value;
 	});
 	
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		let grayscale = Number(sliderGray.value);
 		console.log(grayscale);
 		largeImage.style.filter="grayscale("+(grayscale/100)*100+"%)";
-		let num = document.getElementById("sliderGray");
+		let num = document.getElementById("numGray");
 		num.innerHTML = sliderGray.value;
 	});
 	
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		let blur = Number(sliderBlur.value);
 		console.log(blur);
 		largeImage.style.filter="blur("+(blur/100)*100+"px)";
-		let num = document.getElementById("sliderBlur");
+		let num = document.getElementById("numBlur");
 		num.innerHTML = sliderBlur.value;
 	});
 	
