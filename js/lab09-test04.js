@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		console.log(opacity);
 		largeImage.style.filter="opacity("+opacity/100+")";
 		let num = document.getElementById("numOpacity");
-		num.innerHTML = opacity;
+		num.innerHTML = sliderOpacity.value;
 	});
 	
 	let sliderSaturation = document.getElementById("sliderSaturation");
@@ -38,6 +38,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		let saturation = Number(sliderSaturation.value);
 		console.log(saturation);
 		largeImage.style.filter="saturate("+(saturation/300)*100+"%)";
+		let num = document.getElementById("numSaturation");
+		num.innerHTML = sliderSaturation.value;
 	});
 	
 	let sliderBrightness = document.getElementById("sliderBrightness");
@@ -45,6 +47,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		let brightness = Number(sliderBrightness.value);
 		console.log(brightness);
 		largeImage.style.filter="brightness("+brightness/300+")";
+		let num = document.getElementById("sliderBrightness");
+		num.innerHTML = sliderBrightness.value;
 	});
 	
 	let sliderHue = document.getElementById("sliderHue");
@@ -52,6 +56,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		let hue = Number(sliderHue.value);
 		console.log(hue);
 		largeImage.style.filter="hue-rotate("+(hue/360)*100+"deg)";
+		let num = document.getElementById("sliderHue");
+		num.innerHTML = sliderHue.value;
 	});
 	
 	let sliderGray = document.getElementById("sliderGray");
@@ -59,6 +65,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		let grayscale = Number(sliderGray.value);
 		console.log(grayscale);
 		largeImage.style.filter="grayscale("+(grayscale/100)*100+"%)";
+		let num = document.getElementById("sliderGray");
+		num.innerHTML = sliderGray.value;
 	});
 	
 	let sliderBlur = document.getElementById("sliderBlur");
@@ -66,6 +74,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		let blur = Number(sliderBlur.value);
 		console.log(blur);
 		largeImage.style.filter="blur("+(blur/100)*100+"px)";
+		let num = document.getElementById("sliderBlur");
+		num.innerHTML = sliderBlur.value;
 	});
 	
 	let resetButton = document.getElementById("resetFilters");
